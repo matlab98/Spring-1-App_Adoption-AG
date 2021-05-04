@@ -1,1 +1,2 @@
-# Spring-1-App_Adoption-AG
+# adoptionApp
+Diseñaré las vistas de una aplicación de adopción de mascotas.
