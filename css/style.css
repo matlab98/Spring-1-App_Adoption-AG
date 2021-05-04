@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #FEC7D7;
+    --color-secundary: #A786DF;
+    --font-family: "Nunito";
+    --color-blue: #91C1D7;
+    --color-green: #85D1CE;
+    --color-gray: #535353;
+    --color-tertiary: #D9D4E7;
+    --color-black: #0E172C;
+    --bs-secondary: #0E172C;
+}
+
+.buttom {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0125em;
+}
+
+.menu-mascotas {
+    position: fixed;
+    top: 93%;
+    width: 100%;
+}
