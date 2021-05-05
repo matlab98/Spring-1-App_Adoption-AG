@@ -44,7 +44,7 @@ export const dataDogs = {
         "age" : "3 Meses",
         "sex" : "male",
         "location" : "A la vuelta de Chester",
-        "personality" : ["Cariñoso", "tierno", "Jugueton"],
+        "personality" : ["Cariñoso", "Tierno", "Jugueton"],
         "history" : "Papi es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
         "petPhoto" : "img/papi.jpg",
         "owner" : "Bruno Díaz",
