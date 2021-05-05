@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/user.css">
 </head>
+
 <body class="primary-background navigator-padding scene_element scene_element--fadein">
     <main id="main" class="constraint">
         <p class="headline-1 user-headline text-color-black padding-title">Perfil</p>
@@ -18,48 +20,52 @@
                 <img src="img/img-user.jpg" alt="Usuario">
             </div>
             <p id="name-current-info" class="body-1-regular"></p>
-            <a id="edit-account" href="#"><p class="button-text">Editar cuenta</p></a>
+            <a id="edit-account" href="#">
+                <p class="button-text">Editar cuenta</p>
+            </a>
         </div>
 
         <form action="" class="user-form">
             <label class="label-input body-1-regular" for="name-input">Nombre
-                <input class="input body-1-regular" id="name-input" type="text" placeholder="Ingresa tu nombre" required>
+                <input class="input body-1-regular" id="name-input" type="text" placeholder="Ingresa tu nombre"
+                    required>
             </label>
             <label class="label-input body-1-regular" for="lastname-input">Apellido
-                <input class="input body-1-regular" id="lastname-input" type="text" placeholder="Ingresa tu Apellido" required>
+                <input class="input body-1-regular" id="lastname-input" type="text" placeholder="Ingresa tu Apellido"
+                    required>
             </label>
             <label class="label-input body-1-regular" for="email-input">Correo
-                <input class="input body-1-regular" id="email-input" type="email" placeholder="Ingresa tu correo" required>
+                <input class="input body-1-regular" id="email-input" type="email" placeholder="Ingresa tu correo"
+                    required>
             </label>
             <input class="submit-button button button-form" type="submit" value="Guardar">
 
         </form>
-    
+
     </main>
     <div class="nav" id="navbar">
         <div class="nav-bar-container nav_list">
             <nav class="nav-bar constraint nav_container nav_items">
                 <div id="home-icon">
-                    <a href="index.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
+                    <a href="index.html" class="nav_link active" aria-current="page" tabindex="-1">
                         <img src="img/home.png" alt="home">
                         <span class="nav_name nav_home body-2-regular"></span>
                     </a>
                 </div>
                 <div id="chat-icon">
-                    <a href="mensajes.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
+                    <a href="message.html" class="nav_link active" aria-current="page" tabindex="-1">
                         <img src="img/message.png" alt="chat">
                         <span class="nav_name nav_message body-2-regular"></span>
                     </a>
                 </div>
                 <div id="favourites-icon">
-                    <a href="favourites.html" class="nav_link active" aria-current="page" href="index.html"
-                        tabindex="-1">
+                    <a href="favourite.html" class="nav_link active" aria-current="page" tabindex="-1">
                         <img src="img/favorite.png" alt="favourites">
                         <span class="nav_name nav_fav body-2-regular"></span>
-                    </a> 
+                    </a>
                 </div>
                 <div id="user-icon">
-                    <a href="user.html" class="nav_link button selected" aria-current="page" href="index.html" tabindex="-1">
+                    <a href="user.html" class="nav_link button selected" aria-current="page" tabindex="-1">
                         <img src="img/user-green.png" alt="user">
                         <span class="nav_name text-color-green body-2-regular">Perfil</span>
                     </a>
@@ -70,4 +76,5 @@
     <script src="js/user.js"></script>
     <script src="js/menu.js"></script>
 </body>
+
 </html>

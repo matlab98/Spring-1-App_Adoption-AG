@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/favourite.css">
+</head>
+<body class="primary-background navigator-padding scene_element scene_element--fadein">
+    
+    <main class="constraint">
+        <p class="headline-1 text-color-black padding-title">Mascotas Favoritas</p>
+        <div class="cards-container">
+        </div> 
+    </main>
+
+
+    <div class="nav" id="navbar">
+        <div class="nav-bar-container nav_list">
+            <nav class="nav-bar constraint nav_container nav_items">
+                <div id="home-icon">
+                    <a href="index.html" class="nav_link active" aria-current="page" tabindex="-1">
+                        <img src="img/home.png" alt="home">
+                        <span class="nav_name nav_home body-2-regular">Inicio</span>
+                    </a>
+                </div>
+                <div id="chat-icon">
+                    <a href="message.html" class="nav_link active" aria-current="page" tabindex="-1">
+                        <img src="img/message.png" alt="chat">
+                        <span class="nav_name nav_message body-2-regular"></span>
+                    </a>
+                </div>
+                <div id="favourites-icon">
+                    <a href="favourite.html" class="nav_link  button selected" aria-current="page" tabindex="-1">
+                        <img src="img/favorite-green.png" alt="favourites">
+                        <span class="nav_name text-color-green body-2-regular">Favoritos</span>
+                        
+                    </a>
+                </div>
+                <div id="user-icon">
+                    <a href="user.html" class="nav_link active" aria-current="page" tabindex="-1">
+                        <img src="img/user.png" alt="user">
+                        <span class="nav_name nav_profile body-2-regular"></span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script type="module" src="js/favourite.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+:root{
+    --color-primary:#FEC7D7;
+    --color-secondary:#A786DF;
+    --color-tertiary: #D9D4E7;
+    --color-green: #85D1CE;
+    --color-blue: #91C1D7;
+    --color-white: #FFFFFE;
+    --color-black: #0E172C;
+    --font-family: "Nunito", sans-serif;
+
+}
+
+#container-logo{
+    height: 100vh;
+    background-image: url("/img/logo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 31px;
+    animation-name: agrandar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes agrandar{
+    from{
+        display: block;
+        background-size: 31px;
+    }
+
+    to{
+        background-size: 150px;
+    }
+}
+.container-img{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img div{
+    text-align: center;
+    width: 327px;
+}
+
+.container-img div img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-button{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 327px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+#container-imagen-segunda{
+    position: absolute;
+    left: 100vw;
+    top: 0;
+}
+
+.scene_element {
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.scene_element--fadeinrightentry {
+    animation-name: fadeInRightEntry;
+}
+
+@keyframes fadeInRightEntry {
+    0% {
+        left: 100vw;
+        
+    }
+    
+    100% {
+        left: calc(50% - 163.5px);
+        top: 0;
+    }
+    }
+
+.scene_element--fadeoutrightentry {
+    animation-name: fadeOutRightEntry;
+}
+
+@keyframes fadeOutRightEntry {
+    0% {
+        left: calc(50% -270px);
+        top: 0;
+        
+    }
+    
+    100% {
+        left: -100vw;
+        top: 0;
+        /* right: 0; */
+        /* bottom: 0; */
+    }
+        }

@@ -11,63 +11,40 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/adopt.css">
 </head>
 
-<body class="primary-background navigator-padding scene_element scene_element--fadein">
-    <main class="constraint">
-        <section id="category-container">
-            <h1 class="headline-1">Adopta una adorable mascota</h1>
-            <p class="subtitle-1">Categorías de mascotas</p>
-            <div id="buttons-category-container">
-                <div name="dog-category" id="dog-category" class="button-category button dog-button">
-                    <div class="icon icon-dog">
-                    </div>
-                    <p class="body-1-bold text-color-white">Perros</p>
-                </div>
-                <div id="cat-category" class="button-category button cat-button">
-                    <div class="icon icon-cat">
-                    </div>
-                    <p class="body-1-bold text-color-white">Gatos</p>
-                </div>
+<body id="main" class="primary-background navigator-padding scene_element scene_element--fadein">
+    <div id="container-logo">
+    </div>
+    
+    <div class="hidden scene_element scene_element--fadein" id="container-imagen-inicial">
+        <div class="container-img">
+            <div>
+                <img src="img/esperandoadopcion.png" alt="">
+                <p class="headline-2">Encuentra tu amigo fiel</p>
+                <p class="body-1-regular text-color-gray">Cuando adoptas a una mascota, cosas maravillosas suceden en tu vida. Si estás pensando en tener un nuevo integrante en tu familia; ¡estás en el lugar correcto!</p>
             </div>
-        </section>
-        <section class="cards-container">
-
-        </section>
-    </main>
-    <div class="nav" id="navbar">
-        <div class="nav-bar-container nav_list">
-            <nav class="nav-bar constraint nav_container nav_items">
-                <div id="home-icon">
-                    <a href="index.html" class="nav_link button selected" aria-current="page" href="index.html" tabindex="-1">
-                        <img src="img/home-green.png" alt="home">
-                        <span class="nav_name text-color-green body-2-regular">Inicio</span>
-                    </a>
-                </div>
-                <div id="chat-icon">
-                    <a href="mensajes.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
-                        <img src="img/message.png" alt="chat">
-                        <span class="nav_name nav_message body-2-regular"></span>
-                    </a>
-                </div>
-                <div id="favourites-icon">
-                    <a href="favourites.html" class="nav_link active" aria-current="page" href="index.html"
-                        tabindex="-1">
-                        <img src="img/favorite.png" alt="favourites">
-                        <span class="nav_name nav_fav body-2-regular"></span>
-                    </a> 
-                </div>
-                <div id="user-icon">
-                    <a href="user.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
-                        <img src="img/user.png" alt="user">
-                        <span class="nav_name nav_profile body-2-regular"></span>
-                    </a>
-                </div>
-            </nav>
+        </div>
+        <div class="container-button">
+            <a id="first-button" class="button">Siguiente</a>
         </div>
     </div>
 
-    <script src="js/menu.js"></script>
+    <div class="hidden scene_element" id="container-imagen-segunda">
+        <div class="container-img">
+            <div>
+                <img src="img/adoptado.png" alt="">
+                <p class="headline-2">Crea una nueva historia</p>
+                <p class="body-1-regular text-color-gray">Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.</p>
+            </div>
+        </div>
+        <div class="container-button">
+            <a onclick="menu()" id="second-button" class="button">Siguiente</a>
+        </div>
+    </div>
 </body>
-
+<script src="js/loader.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/adopt.js"></script>
 </html>
