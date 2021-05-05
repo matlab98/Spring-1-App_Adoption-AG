@@ -30,11 +30,11 @@
 }
 
 .icon-dog{
-    background-image: url("/img/perros.png");
+    background-image: url("/img/cat-dog.png");
 }
 
 .icon-cat{
-    background-image: url("/img/gatos.png");
+    background-image: url("/img/cat-cat.png");
 }
 
 .button-category{
@@ -57,6 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  
     body {
       padding: 1rem 3rem 0 6rem;
     }
@@ -86,6 +87,11 @@
     }
     .nav_icon {
       font-size: 1.3rem;
+    }
+    .nav_name {
+      font-size: var(--small-font-size);
+      font-weight: var(--font-medium);
+      white-space: nowrap;
     }
     /* Element opacity */
     .nav_logo-name, 

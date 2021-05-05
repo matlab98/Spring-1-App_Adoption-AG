@@ -21,13 +21,11 @@
             <div id="buttons-category-container">
                 <div name="dog-category" id="dog-category" class="button-category button dog-button">
                     <div class="icon icon-dog">
-
                     </div>
                     <p class="body-1-bold text-color-white">Perros</p>
                 </div>
                 <div id="cat-category" class="button-category button cat-button">
                     <div class="icon icon-cat">
-
                     </div>
                     <p class="body-1-bold text-color-white">Gatos</p>
                 </div>
@@ -39,23 +37,25 @@
     </main>
     <div class="nav" id="navbar">
         <div class="nav-bar-container nav_list">
-            <nav class="nav-bar constraint nav_container nav_items">
-
-                <div id="home-icon" class="nav_link button selected" aria-current="page" href="index.html"
-                    tabindex="-1">
-                    <img src="img/home-green.png" alt="home">
-                    <p class="text-color-green body-2-regular">Home</p>
+            <nav id="menuResponsive" class="nav-bar constraint nav_container nav_items">
+                <div id="home-icon">
+                    <a href="#" class="nav_link button selected" aria-current="page" href="index.html" tabindex="-1">
+                        <img src="img/home-green.png" alt="home">
+                        <span class="nav_name text-color-green body-2-regular">Inicio</span>
+                    </a>
                 </div>
                 <div id="chat-icon">
                     <a href="mensajes.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
                         <img src="img/message.png" alt="chat">
                     </a>
+                    
                 </div>
                 <div id="favourites-icon">
                     <a href="favourites.html" class="nav_link active" aria-current="page" href="index.html"
                         tabindex="-1">
                         <img src="img/favorite.png" alt="favourites">
                     </a>
+                    
                 </div>
                 <div id="user-icon">
                     <a href="user.html" class="nav_link active" aria-current="page" href="index.html" tabindex="-1">
@@ -67,7 +67,6 @@
     </div>
 
     <script src="js/menu.js"></script>
-    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
