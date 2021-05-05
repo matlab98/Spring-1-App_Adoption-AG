@@ -180,6 +180,9 @@
     height: 100%;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 .nav-bar-container{
     position: fixed;
@@ -227,7 +230,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 25px;
     cursor: default;
 }
 

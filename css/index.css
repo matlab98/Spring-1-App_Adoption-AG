@@ -1,6 +1,6 @@
 :root {
   --header-height: 3.5rem;
-  --nav-width: 219px;
+  --nav-width: 165px;
   --container-color: #FFFFFF;
 }
 
@@ -91,7 +91,10 @@
     .nav_name {
       font-size: var(--small-font-size);
       font-weight: var(--font-medium);
-      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
     }
     /* Element opacity */
     .nav_logo-name, 
@@ -174,6 +177,19 @@
 .nav_dropdown:hover .nav_dropdown-icon {
   transform: rotate(180deg);
 }
+.nav_home::before {
+  content: "Inicio";
+}
+.nav_fav::before {
+  content: "Favoritos";
+}
+.nav_message::before {
+  content: "Mensajes";
+}
+.nav_profile::before {
+  content: "Perfil";
+}
+
 /*===== Show menu =====*/
 .show-menu {
   left: 0;
