@@ -208,6 +208,11 @@
   color: var(--first-color);
 }
     /*==== Tercera parte====*/
+
+    .user-form, .user-headline{
+      max-width: 70%;
+      margin: auto;
+  }
     /*==== MENU ====*/
     .nav-bar-container{
       top: 0;

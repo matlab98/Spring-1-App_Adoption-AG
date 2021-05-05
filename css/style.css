@@ -5,10 +5,8 @@
     --color-secondary:#A786DF;
     --color-tertiary: #D9D4E7;
     --color-green: #85D1CE;
-    --color-blue: #91C1D7;
     --color-white: #FFFFFE;
     --color-black: #0E172C;
-    --color-gray: #535353;
     --font-family: "Nunito", sans-serif;
     --container-color: #FFFFFF;
 }
@@ -35,14 +33,6 @@
 
 .text-color-white{
     color: var(--color-white);
-}
-
-.text-color-gray{
-    color: var(--color-gray);
-}
-
-.text-color-blue{
-    color: var(--color-blue);
 }
 
 .text-color-green{
