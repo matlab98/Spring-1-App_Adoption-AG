@@ -1,5 +1,5 @@
 import {dataMessages} from "./dataBase.js";
-let messagesContainer = document.querySelector(".messages-container");
+let messagesContainer = document.getElementById("messages-container");
 console.log(dataMessages)
 let allMessages = ``;
 for (const message of dataMessages) {

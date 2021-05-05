@@ -8,31 +8,32 @@
     <title>Mensajes</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mensajes.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="css/message.css">
 </head>
 
 <body class="primary-background navigator-padding scene_element scene_element--fadein">
     <main id="main" class="constraint">
+        <p class="headline-1">Mensajes</p>
         <section id="category-container">
-            <p class="headline-1">Mensajes</p>
-            <div class="messages-container">
+            <div id="messages-container" class="">
             </div>
         </section>
     </main>
-    <div class="nav" id="navbar">
+    
+    <div id="menu" class="nav" id="navbar">
         <div class="nav-bar-container nav_list">
             <nav class="nav-bar constraint nav_container nav_items">
                 <div id="home-icon">
                     <a href="index.html" class="nav_link active" aria-current="page" tabindex="-1">
                         <img src="img/home.png" alt="home">
-                        <span class="nav_name nav_homebody-2-regular"></span>
+                        <span class="nav_name nav_home body-2-regular"></span>
                     </a>
                 </div>
                 <div id="chat-icon">
                     <a href="message.html" class="nav_link button selected" aria-current="page" tabindex="-1">
                         <img src="img/message-green.png" alt="chat">
-                        <span class="nav_name text-color-green body-2-regular">Mensajes</span>
+                        <span class="nav_name text-color-green body-2-regular">Mensaje</span>
                     </a>
                 </div>
                 <div id="favourites-icon">
@@ -49,7 +50,7 @@
                 </div>
             </nav>
         </div>
-    </div>
+      </div>
     <script type="module" src="js/message.js"></script>
     <script src="js/menu.js"></script>
 </body>

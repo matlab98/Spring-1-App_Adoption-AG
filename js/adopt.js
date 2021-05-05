@@ -1,6 +1,8 @@
 let logo = document.getElementById("container-logo");
-
-
+let imagenInicial = document.getElementById("container-imagen-inicial");
+let SecondImage = document.getElementById("container-imagen-segunda");
+let main = document.getElementById("category");
+let menu = document.getElementById("menu");
 setTimeout(quitarLogo, 1000);
 
 function quitarLogo(){
@@ -11,14 +13,10 @@ function quitarLogo(){
     imagenInicial.classList.toggle("hidden");
 }
 
-
-
 function nextImage(){
-    let imagenInicial = document.getElementById("container-imagen-inicial");
     imagenInicial.classList.toggle("scene_element--fadeoutright");
-    let imagenSegunda = document.getElementById("container-imagen-segunda");
-    imagenSegunda.classList.toggle("hidden");
-    imagenSegunda.classList.toggle("scene_element--fadeinrightentry")
+    SecondImage.classList.toggle("hidden");
+    SecondImage.classList.toggle("scene_element--fadeinrightentry")
 }
 
 let secondButton = document.getElementById("second-button");
@@ -26,8 +24,12 @@ secondButton.addEventListener("click", goToHome);
 
 function goToHome(e) {
     e.preventDefault();
-    let imagenSegunda = document.getElementById("container-imagen-segunda");
-    imagenSegunda.classList.toggle("scene_element--fadeoutrightentry")
-    
+    imagenInicial.classList.toggle("hidden");
+    SecondImage.classList.toggle("hidden");
+    main.classList.toggle("scene_element--fadeinrightentry")
+    menu.classList.toggle("scene_element--fadeinrightentry")
+    main.classList.toggle("hidden");
+    menu.classList.toggle("hidden");
+
 }
 

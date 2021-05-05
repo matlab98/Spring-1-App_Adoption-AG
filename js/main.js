@@ -4,7 +4,7 @@ console.log(document.referrer.includes("entrada.html"));
 
 let dogButton = document.getElementById("dog-category");
 let catButton = document.getElementById("cat-category");
-let cardsContainer = document.querySelector(".cards-container");
+let cardsContainer = document.getElementById("visual");
 
 dogButton.addEventListener("click", verifyPets);
 catButton.addEventListener("click", verifyPets);
@@ -23,7 +23,6 @@ function verifyPets(e) {
     }
 
     listDogs(current, dataPets);
-    // current.classList.remove("opacity");
 }
 
 function listDogs(current, dataPets) {

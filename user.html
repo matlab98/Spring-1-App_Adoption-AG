@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensajes</title>
-
+    <title>Perfil</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/index.css"> 
 </head>
-
 <body class="primary-background navigator-padding scene_element scene_element--fadein">
+    
     <main id="main" class="constraint">
         <p class="headline-1 user-headline text-color-black padding-title">Perfil</p>
         <div id="current-info">
             <div id="user-photo" class="contact-img">
-                <img src="img/img-user.jpg" alt="Usuario">
+                <img src="img/img-user.jpg" alt="foto">
             </div>
             <p id="name-current-info" class="body-1-regular"></p>
-            <a id="edit-account" href="#">
-                <p class="button-text">Editar cuenta</p>
-            </a>
+            <a id="edit-account" href="#"><p class="button-text">Editar cuenta</p></a>
         </div>
 
         <form action="" class="user-form">
             <label class="label-input body-1-regular" for="name-input">Nombre
-                <input class="input body-1-regular" id="name-input" type="text" placeholder="Ingresa tu nombre"
-                    required>
+                <input class="input body-1-regular" id="name-input" type="text" placeholder="Ingresa tu nombre" required>
             </label>
             <label class="label-input body-1-regular" for="lastname-input">Apellido
-                <input class="input body-1-regular" id="lastname-input" type="text" placeholder="Ingresa tu Apellido"
-                    required>
+                <input class="input body-1-regular" id="lastname-input" type="text" placeholder="Ingresa tu Apellido" required>
             </label>
             <label class="label-input body-1-regular" for="email-input">Correo
-                <input class="input body-1-regular" id="email-input" type="email" placeholder="Ingresa tu correo"
-                    required>
+                <input class="input body-1-regular" id="email-input" type="email" placeholder="Ingresa tu correo" required>
             </label>
             <input class="submit-button button button-form" type="submit" value="Guardar">
-
+            <!-- <button>Guardar</button> -->
         </form>
-
+    
     </main>
+
     <div class="nav" id="navbar">
         <div class="nav-bar-container nav_list">
             <nav class="nav-bar constraint nav_container nav_items">
@@ -72,9 +66,7 @@
                 </div>
             </nav>
         </div>
-    </div>
+      </div>
     <script src="js/user.js"></script>
-    <script src="js/menu.js"></script>
 </body>
-
 </html>

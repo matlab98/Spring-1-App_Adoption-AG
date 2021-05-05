@@ -9,6 +9,9 @@
     margin: 20px 0;
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
 
 .info-message{
     display: flex;
@@ -30,8 +33,3 @@
 .arrow-message{
     pointer-events: none;
 }
-
-
-
-
-
