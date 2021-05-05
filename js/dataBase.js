@@ -139,7 +139,7 @@ export const dataMessages= [
         "owner": "Maria Dolores",
         "ownerPhoto" : "img/img-user.jpg",
         "inputMessage" : "Hola, me intresaría adoptar  a Rocky",
-        "outputMessage" : "Hola! claro, podemos acordar un lugar y hora para que conoscas",
+        "outputMessage" : "¡Hola! claro, podemos acordar un lugar y hora para que conozcas...",
         "inputTime" : "4:00 PM",
         "outputTime" : "4:36 PM"
     }

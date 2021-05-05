@@ -30,11 +30,11 @@
   }
   
   .icon-dog{
-      background-image: url("/img/cat-dog.png");
+      background-image: url("https://matlab98.github.io/Spring-1-App_Adoption-AG/img/cat-dog.png");
   }
   
   .icon-cat{
-      background-image: url("/img/cat-cat.png");
+      background-image: url("https://matlab98.github.io/Spring-1-App_Adoption-AG/img/cat-cat.png");
   }
   
   .button-category{
