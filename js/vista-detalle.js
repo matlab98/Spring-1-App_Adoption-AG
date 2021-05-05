@@ -1,10 +1,6 @@
 let petObject = JSON.parse(localStorage.getItem("detailView"));
-// console.log();
-
- 
 let imgView = document.getElementById("pet-photo");
 imgView.src = petObject.petPhoto;
-
 let nameAndSex = document.getElementById("name-and-sex");
 nameAndSex.setAttribute("name",petObject.id);
 nameAndSex.firstElementChild.textContent = petObject.namePet;
@@ -35,7 +31,7 @@ let allCharacteristics = ``;
 for(let char of petObject.personality){
     singleChar = `
         <div class="personality-item">
-            <img src="img/${char}.png" alt="${char}">
+            <img src="img/${char.toLowerCase()}.png" alt="${char}">
             <p class="body-1-regular">${char}</p>
         </div>
         `
@@ -43,9 +39,7 @@ for(let char of petObject.personality){
 }
 personalityItemsContainer.innerHTML = allCharacteristics;
 
-
 let imgFavourites = document.getElementById("favourite-button").firstElementChild;
-
 
 if (localStorage.getItem("favourites")) {
     let favouristList = JSON.parse(localStorage.getItem("favourites"));
@@ -60,11 +54,6 @@ if (localStorage.getItem("favourites")) {
     imgFavourites.src = "img/no-guardado.png";
     imgFavourites.alt = "No Favorito";
 }
-
-
-
-
-
 
 imgFavourites.addEventListener("click", checkFavourite);
 
@@ -96,7 +85,6 @@ function checkFavourite() {
         }
     }
 }
-
 
 // Boton de contactar
 let contactButton = document.getElementById("contact-button");
